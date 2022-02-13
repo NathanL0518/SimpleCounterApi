@@ -7,15 +7,15 @@ num_people = 0
 names = []
 logs = []
 
-@app.route('/hw1_api/getNumPeople',methods = ['GET'])
+@app.route('/simple_api/getNumPeople',methods = ['GET'])
 def getNumPeople():
    return jsonify({"Total people online: ":num_people});
 
-@app.route('/hw1_api/getLog',methods = ['GET'])
+@app.route('/simple_api/getLog',methods = ['GET'])
 def getHistory():
    return jsonify(logs);
 
-@app.route('/hw1_api/getUserList', methods = ['GET'])
+@app.route('/simple_api/getUserList', methods = ['GET'])
 def getUsesrList():
    if logs == []:
       return jsonify("No one is online")
@@ -23,7 +23,7 @@ def getUsesrList():
       return jsonify(names)
    return jsonify(names);
 
-@app.route('/hw1_api/login',methods = ['POST'])
+@app.route('/simple_api/login',methods = ['POST'])
 def login():
    global num_people
    num_people += 1
@@ -34,7 +34,7 @@ def login():
    logs.append(log)
    return jsonify("Login Successed!");
 
-@app.route('/hw1_api/logout',methods = ['POST'])
+@app.route('/simple_api/logout',methods = ['POST'])
 def delete():
    global num_people
    num_people -= 1
