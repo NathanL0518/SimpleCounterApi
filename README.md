@@ -25,9 +25,9 @@ Use Postman, CURL, or other program to call the following functions:
   * GET - [http://127.0.0.1:8081/simple_api/getUserList](http://127.0.0.1:8081/simple_api/getUserList)
     * getUserList - will return a list of names of the users that are currently online
   * POST - [http://127.0.0.1:8081/simple_api/login](http://127.0.0.1:8081/simple_api/login)
-    *login - login with your username as "username": "YOUR_USERNAME" and the method will increments the number of people online and add your name into the user list and log it
+    * login - login with your username as "username": "YOUR_USERNAME" and the method will increments the number of people online and add your name into the user list and log it
   * POST - [http://127.0.0.1:8081/simple_api/logout](http://127.0.0.1:8081/simple_api/logout)
-    **logout - logout with your username as "username": "YOUR_USERNAME" and the method will decrements the number of people online and delete your name from the user list and log it
+    * logout - logout with your username as "username": "YOUR_USERNAME" and the method will decrements the number of people online and delete your name from the user list and log it
 
 ## Running via Docker
 
